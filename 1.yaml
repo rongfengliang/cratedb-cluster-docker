@@ -1,0 +1,17 @@
+cluster.name: cratecluster
+node.name: node1
+node.master: true
+node.data: true
+http.port: 4200
+psql.port: 5432
+transport.tcp.port: 4300
+discovery.zen.ping.unicast.hosts: ["crate1"]
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+gateway.expected_nodes: 3
+gateway.recover_after_nodes: 2
+gateway.recover_after_time: 5m
+network.host: _local_,_site_
+path.logs: /data/log
+path.data: /data/data
+blobs.path: /data/blobs
