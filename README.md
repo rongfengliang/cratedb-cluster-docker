@@ -10,7 +10,7 @@ docker-compose up -d
 
 ## search result
 
-> you can use pg client connect to the server use is crate
+> you can use pg client connect to the server(user is crate)
 
 ```code
 select count(*) from sys.nodes
